@@ -23,7 +23,6 @@ static func _static_init() -> void:
 	_editor_setting_inspector = si.find_child("EditorInspector",true,false)
 	var tree:Tree = si.find_child("Tree",true,false)
 	tree.cell_selected.connect(_on_editor_inspector_changed)
-	tree.cell_selected.connect(func(): print("AAA"))
 
 	_scene_tree = editor_settings_window.get_tree()
 
