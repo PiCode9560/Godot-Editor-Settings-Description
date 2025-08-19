@@ -12,8 +12,8 @@ This is made for an extension of your plugin, so add this to your plugin folder,
 # Performace
 This meant to be as lightweight as possible in term of storage and also cpu and memory usage. So the code is not running every frame.
 
-# Installing
-- Download the script and uid file.
+# Installation
+- Download the script file.
 - Place them into your plugin folder (e.g. `addons/my_plugin/...`)
 # Usage
 Preload the script and use the script's `set_editor_setting_desc()` or `set_project_setting_desc()` method to set the description of your custom settings.
