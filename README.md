@@ -5,7 +5,12 @@ Currently, [godot didn't allow you to add description to a custom project/editor
 
 This is made for an extension of your plugin, so add this to your plugin folder, and the description will be displayed as long as the plugin is in the project.
 
+> Tested on godot 4.1 and above.
+
 <img width="1202" height="739" alt="image" src="https://github.com/user-attachments/assets/b7fd1666-1c38-4822-9a49-a511c6753206" />
+
+# Performace
+This meant to be as lightweight as possible in term of storage and also cpu and memory usage. So the code is not running every frame.
 
 # Installing
 - Download the script and uid file.
@@ -23,3 +28,6 @@ func _enter_tree() -> void:
 	EditorSettingsDescription.set_project_setting_desc("category/custom_project_setting","This is a test [b]project setting[/b] with a description.")
 
 ```
+
+# Implementation detail.
+The way this works is, when you set a description, it will be stored in memory. Then when the setting's tooltip pop up, it will get access directly to the tooltip node, and set the description to its label.
