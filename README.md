@@ -1,7 +1,7 @@
 # Godot-Editor-Settings-Description
 Allow you to set a description on a custom project and editor settings. Useful for making a settings for a plugin.
 
-Currently, godot didn't allow you to add description to a custom project/editor settings. So I made this as a temporary fix.
+Currently, [godot didn't allow you to add description to a custom project/editor settings](https://github.com/godotengine/godot-proposals/discussions/8224). So I made this as a temporary fix.
 
 This is made for an extension of your plugin, so add this to your plugin folder, and the description will be displayed as long as the plugin is in the project.
 
